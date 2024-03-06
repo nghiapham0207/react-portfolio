@@ -192,7 +192,7 @@ export default function Contact() {
 										/>
 									</svg>
 								</span>
-								<a href="tel:0334569493">(+84) 334569493</a>
+								<a href="tel:+84334569493">(+84) 334569493</a>
 							</div>
 							<div className="flex gap-2">
 								<span>
