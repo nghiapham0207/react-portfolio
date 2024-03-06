@@ -1,16 +1,16 @@
 export default function Hero() {
 	return (
-		<section id="home" className="flex min-h-screen items-center">
-			<div className="flex flex-1 items-center justify-center">
+		<section id="home" className="flex min-h-screen flex-col items-center pb-6 md:flex-row md:pb-0">
+			<div className="flex flex-1 items-center justify-center p-4 md:p-0">
 				<img
 					src="https://johnalexportfolio.netlify.app/assets/hero.a707d92d.png"
 					alt=""
-					className="w-1/2"
+					className="md:w-11/12 lg:w-2/3"
 				/>
 			</div>
 			<div className="flex flex-1 flex-col">
-				<div className="">
-					<h1 className="text-4xl font-bold leading-normal text-black">
+				<div className="text-center md:text-start">
+					<h1 className="text-xl font-bold leading-normal text-black md:text-4xl">
 						<span className="text-5xl text-cyan-500">
 							Hello!
 							<br />
@@ -24,7 +24,7 @@ export default function Hero() {
 						className="mt-4 inline-block rounded-full bg-cyan-400 p-4 font-bold capitalize text-white">
 						contact me
 					</a>
-					<div className="mt-4 flex gap-5">
+					<div className="mt-4 flex justify-center gap-5 md:justify-start">
 						<div className="cursor-pointer text-gray-200 hover:text-gray-300">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

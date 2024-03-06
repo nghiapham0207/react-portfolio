@@ -119,7 +119,7 @@ export default function Contact() {
 					</h2>
 					<h4 className="font-[Paprika] text-4xl uppercase leading-relaxed">get in touch</h4>
 					<br />
-					<div className="flex gap-10 rounded-lg bg-[rgb(245,249,253)] p-4">
+					<div className="flex flex-col-reverse gap-10 rounded-lg bg-[rgb(245,249,253)] p-4 md:flex-row">
 						<form ref={formRef} onSubmit={handleSendMail} className="flex grow flex-col gap-4">
 							<input
 								type="email"
@@ -169,7 +169,12 @@ export default function Contact() {
 										/>
 									</svg>
 								</span>
-								<a href="mailto:nghiapham02072001@gmail.com">nghiapham02072001@gmail.com</a>
+								<a
+									href="mailto:nghiapham02072001@gmail.com"
+									className="truncate"
+									title={"nghiapham02072001@gmail.com"}>
+									nghiapham02072001@gmail.com
+								</a>
 							</div>
 							<div className="flex gap-2">
 								<span>

@@ -1,14 +1,14 @@
 export default function About() {
 	return (
 		<section id="about">
-			<div className="container mx-auto max-w-6xl px-16 py-14">
+			<div className="container mx-auto max-w-6xl px-8 py-6 md:px-16 md:py-14">
 				<div className="text-center">
 					<h3 className="text-3xl">
 						About <span className="text-cyan-400">Me</span>
 					</h3>
 					<p className="mt-2 text-xl capitalize text-gray-400">my introduction</p>
 				</div>
-				<div className="mt-2 flex items-center gap-12">
+				<div className="mt-2 flex flex-col-reverse items-center gap-12 md:flex-row">
 					<div className="flex flex-col items-start justify-center">
 						<h5 className="text-gray-600">
 							Hello! I am Pham Hong Nghia, an undergraduate student majoring in Software Engineering
@@ -39,7 +39,7 @@ export default function About() {
 						<img
 							src="https://johnalexportfolio.netlify.app/assets/about.34cb49a4.png"
 							alt=""
-							className="h-full w-72 max-w-sm"
+							className="h-full w-full max-w-sm md:w-72"
 						/>
 						<div className="absolute inset-0 z-[-1] rotate-12 rounded-xl bg-gray-200"></div>
 					</div>

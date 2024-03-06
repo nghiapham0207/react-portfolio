@@ -30,9 +30,11 @@ const skills: ISKill[] = [
 export default function Skills() {
 	return (
 		<section id="skills" className="bg-[rgb(245,249,253)]">
-			<div className="container mx-auto px-16 py-14">
+			<div className="container mx-auto px-4 py-4 md:px-16 md:py-14">
 				<h2 className="font-[Inria] text-3xl font-bold">Skills</h2>
-				<h4 className="font-[Paprika] text-4xl uppercase text-gray-400/80">my top skills</h4>
+				<h4 className="font-[Paprika] text-3xl uppercase text-gray-400/80 md:text-4xl">
+					my top skills
+				</h4>
 				<br />
 				<div className="flex flex-wrap justify-center gap-4">
 					{skills.map((element, index) => (
