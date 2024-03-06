@@ -9,25 +9,94 @@ interface ISKill {
 }
 
 const skills: ISKill[] = [
-	{ name: "HTML", description: "Competent at HTML", icon: "/images/html.png" },
-	{ name: "CSS", description: "Proficient in CSS", icon: "/images/css.png" },
-	{ name: "Javascript", description: "Proficient in Javascript", icon: "/images/javascript.png" },
-	{ name: "ReactJs", description: "Proficient in React", icon: "/images/react.png" },
+	{
+		name: "HTML",
+		description: "Competent at HTML",
+		icon: "/images/html.png",
+		content: [
+			"Use HTML proficiently to create website layouts.",
+			"Understanding semantic HTML and designing web pages with semantic elements will give meaning to both the browser and the developer.",
+		],
+	},
+	{
+		name: "CSS",
+		description: "Proficient in CSS",
+		icon: "/images/css.png",
+		content: [
+			"Apply CSS expertly to style your website.",
+			"Understanding the Box Model is essential for web design.",
+			"Understanding the BEM (Block, Element, Modifier) standard is important for structuring CSS classes effectively.",
+			"Implementing responsive web design ensures optimal viewing experience across various devices.",
+			"Designing web pages is easier with a grid system.",
+			"Understanding CSS Image Sprites is important for optimizing website performance.",
+			"Familiarity with CSS selectors is essential for effectively styling web elements.",
+			"Understanding flexbox to a certain extent.",
+		],
+	},
+	{
+		name: "Javascript",
+		description: "Proficient in Javascript",
+		icon: "/images/javascript.png",
+		content: [
+			"Proficient in JavaScript usage.",
+			"Capable of utilizing JavaScript to manipulate the DOM.",
+			"Familiar with synchronous and asynchronous concepts in JavaScript.",
+			"Competent in utilizing JavaScript libraries like jQuery.",
+			"Understanding exception and error handling in JavaScript.",
+		],
+	},
+	{
+		name: "ReactJs",
+		description: "Proficient in React",
+		icon: "/images/react.png",
+		content: [
+			"Capable of creating single-page applications using React.js.",
+			"Capable of optimizing performance in React.js.",
+			"Familiar with using React hooks.",
+			"Capable of dividing UI into reusable components.",
+			"Capable of manipulating the DOM using refs in React.js.",
+			"Understanding various component lifecycles.",
+		],
+	},
 	{
 		name: "TailwindCSS",
 		description: "Competent at TailwindCSS",
 		icon: "/images/tailwindcss.png",
+		content: [
+			"Proficient in utilizing Tailwind CSS for website styling.",
+			"Able to customize components, layers, and utilities as needed.",
+			"Capable of extracting classes using @apply.",
+		],
 	},
-	{ name: "Redux", description: "Proficient in Redux", icon: "/images/redux.svg" },
+	{
+		name: "Redux",
+		description: "Proficient in Redux",
+		icon: "/images/redux.svg",
+		content: [
+			"Familiar with core concepts of Redux including app structure, data flow, and utilizing Redux data.",
+			"Proficient in managing a predictable state container with Redux.",
+			"Capable of optimizing performance with memoized selector functions created by createSelector.",
+		],
+	},
 	{
 		name: "TanStack React Query",
 		description: "Proficient in React Query",
 		icon: "/images/tanstack-react-query.png",
+		content: [
+			"Capable of fetching and caching data from a RESTful API.",
+			"Proficient in implementing performance optimizations such as pagination and lazy loading data.",
+		],
 	},
 	{
 		name: "React Hook Form",
 		description: "Competent at React Hook Form",
 		icon: "/images/react-hook-form.png",
+		content: [
+			"Validating forms using React Hook Form.",
+			"Handling errors effectively.",
+			"Applying schema validation.",
+			"Registering components into the hook for validation and submission.",
+		],
 	},
 ];
 
@@ -73,7 +142,8 @@ export default function Skills() {
 						<br />
 						<div className="max-h-[60vh] overflow-auto">
 							<ul className="list-disc px-4 font-[Poppins] text-sm">
-								<li>
+								{selectedSkill.content?.map((skill, index) => <li key={index}>{skill}</li>)}
+								{/* <li>
 									Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor sit, ame.
 								</li>
 								<li>
@@ -81,7 +151,7 @@ export default function Skills() {
 								</li>
 								<li>
 									Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor sit, ame.
-								</li>
+								</li> */}
 							</ul>
 						</div>
 						<br />

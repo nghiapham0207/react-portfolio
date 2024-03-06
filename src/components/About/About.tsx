@@ -13,8 +13,9 @@ export default function About() {
 				<div className="mt-2 flex flex-col-reverse items-center gap-12 md:flex-row">
 					<div className="flex flex-col items-start justify-center">
 						<h5 className="text-gray-600" data-aos="fade">
-							Hello! I am Pham Hong Nghia, an undergraduate student majoring in Software Engineering
-							at the Posts and Telecommunications Institute of Technology.
+							Hello! I am <strong>Pham Hong Nghia</strong>, an undergraduate student majoring in
+							<strong> Software Engineering</strong> at the
+							<strong> Posts and Telecommunications Institute of Technology</strong>.
 							<br />
 							Throughout my academic journey, I have extensive knowledge about HTML, CSS, SCSS,
 							JavaScript, ReactJs as well as software development, project management, and
