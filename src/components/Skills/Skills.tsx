@@ -137,7 +137,7 @@ export default function Skills() {
 						className="absolute left-[50%] top-[50%] w-[90%] max-w-96 translate-x-[-50%] translate-y-[-50%] overflow-auto rounded border bg-white p-5">
 						<div className="flex items-center gap-4">
 							<img src={selectedSkill.icon} alt={selectedSkill.icon} className="h-10 w-10" />
-							<h6>{selectedSkill.name}</h6>
+							<h6 className="font-[Paprika] font-bold">{selectedSkill.name}</h6>
 						</div>
 						<br />
 						<div className="max-h-[60vh] overflow-auto">

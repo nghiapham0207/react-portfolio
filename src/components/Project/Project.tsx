@@ -28,6 +28,11 @@ const projects: IProject[] = [
 		github: "https://github.com/nghiapham0207/react-job-seeker",
 		demo: "https://job-seeker-fe.netlify.app/",
 	},
+	{
+		title: "Stationery Shop",
+		image: "/images/demo-stationery.jpg",
+		github: "https://github.com/nghiapham0207/react-stationery-fe",
+	},
 ];
 
 export default function Project() {
