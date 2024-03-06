@@ -5,20 +5,25 @@ export default function Hero() {
 				<img
 					src="https://johnalexportfolio.netlify.app/assets/hero.a707d92d.png"
 					alt=""
-					className="md:w-11/12 lg:w-2/3"
+					data-aos="fade-zoom-out"
+					className="md:w-8/12 lg:w-3/5"
 				/>
 			</div>
 			<div className="flex flex-1 flex-col">
 				<div className="text-center md:text-start">
 					<h1 className="text-xl font-bold leading-normal text-black md:text-4xl">
-						<span className="text-5xl text-cyan-500">
+						<span className="text-5xl text-cyan-500" data-aos="fade-down">
 							Hello!
 							<br />
 						</span>
-						{"My name is "}
-						<span>Pham Hong Nghia</span>
+						<span data-aos="fade-down">
+							{"My name is "}
+							<span>Pham Hong Nghia</span>
+						</span>
 					</h1>
-					<h4 className="mt-4">Fresher Frontend Developer</h4>
+					<h4 className="mt-4" data-aos="fade">
+						Fresher Frontend Developer
+					</h4>
 					<a
 						href="#contact"
 						className="mt-4 inline-block rounded-full bg-cyan-400 p-4 font-bold capitalize text-white">

@@ -96,7 +96,9 @@ export default function Navbar() {
 	const [active, setActive] = useState(0);
 	return (
 		<div>
-			<div className="fixed left-8 top-8 z-10 select-none" onClick={() => setShowMenu(!showMenu)}>
+			<div
+				className="fixed left-8 top-8 z-50 select-none rounded-lg bg-white/45 p-2"
+				onClick={() => setShowMenu(!showMenu)}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"

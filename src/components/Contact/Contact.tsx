@@ -94,6 +94,7 @@ export default function Contact() {
 			if (res.status === OK) {
 				// toast and reset form
 				setState({ message: "Send Successfully!", type: "success" });
+				formRef.current?.reset();
 			}
 		} catch (error) {
 			// toast error.text
@@ -114,13 +115,19 @@ export default function Contact() {
 			/>
 			<section id="contact">
 				<div className="container mx-auto px-10 py-14">
-					<h2 className="text-3xl font-bold capitalize">
+					<h2 className="text-3xl font-bold capitalize" data-aos="fade-down">
 						contact <span className="text-cyan-400">me</span>
 					</h2>
-					<h4 className="font-[Paprika] text-4xl uppercase leading-relaxed">get in touch</h4>
+					<h4 className="font-[Paprika] text-4xl uppercase leading-relaxed" data-aos="fade-down">
+						get in touch
+					</h4>
 					<br />
-					<div className="flex flex-col-reverse gap-10 rounded-lg bg-[rgb(245,249,253)] p-4 md:flex-row">
-						<form ref={formRef} onSubmit={handleSendMail} className="flex grow flex-col gap-4">
+					<div className="flex flex-col-reverse gap-10 md:flex-row">
+						<form
+							ref={formRef}
+							onSubmit={handleSendMail}
+							className="flex grow flex-col gap-4 rounded-lg bg-[rgb(245,249,253)] p-4"
+							data-aos="fade-up">
 							<input
 								type="email"
 								name="from_email"
@@ -153,7 +160,7 @@ export default function Contact() {
 							</button>
 						</form>
 						<div className="flex grow flex-col gap-2">
-							<div className="flex gap-2">
+							<div className="flex gap-2" data-aos="fade-down">
 								<span>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +183,7 @@ export default function Contact() {
 									nghiapham02072001@gmail.com
 								</a>
 							</div>
-							<div className="flex gap-2">
+							<div className="flex gap-2" data-aos="fade-down">
 								<span>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -194,7 +201,7 @@ export default function Contact() {
 								</span>
 								<a href="tel:+84334569493">(+84) 334569493</a>
 							</div>
-							<div className="flex gap-2">
+							<div className="flex gap-2" data-aos="fade-down">
 								<span>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
