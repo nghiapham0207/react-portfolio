@@ -98,6 +98,11 @@ const skills: ISKill[] = [
 			"Registering components into the hook for validation and submission.",
 		],
 	},
+	{
+		name: "Git",
+		description: "Proficient in Git",
+		icon: "/images/github.png",
+	},
 ];
 
 export default function Skills() {
@@ -143,15 +148,6 @@ export default function Skills() {
 						<div className="max-h-[60vh] overflow-auto">
 							<ul className="list-disc px-4 font-[Poppins] text-sm">
 								{selectedSkill.content?.map((skill, index) => <li key={index}>{skill}</li>)}
-								{/* <li>
-									Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor sit, ame.
-								</li>
-								<li>
-									Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor sit, ame.
-								</li>
-								<li>
-									Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor sit, ame.
-								</li> */}
 							</ul>
 						</div>
 						<br />
@@ -177,7 +173,7 @@ export default function Skills() {
 						my top skills
 					</h4>
 					<br />
-					<div className="flex flex-wrap justify-center gap-4">
+					<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
 						{skills.map((element, index) => (
 							<div
 								key={index}

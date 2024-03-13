@@ -1,12 +1,12 @@
 export default function About() {
 	return (
 		<section id="about">
-			<div className="container mx-auto max-w-6xl px-8 py-6 md:px-16 md:py-14">
-				<div className="text-center">
-					<h3 className="text-3xl" data-aos="slide-down">
+			<div className="mx-auto px-4 py-4 lg:container lg:px-16 lg:py-14">
+				<div>
+					<h3 className="text-center text-3xl" data-aos="slide-down">
 						About <span className="text-cyan-400">Me</span>
 					</h3>
-					<p className="mt-2 text-xl capitalize text-gray-400" data-aos="slide-down">
+					<p className="mt-2 text-2xl capitalize text-gray-400" data-aos="slide-down">
 						my introduction
 					</p>
 				</div>
@@ -31,21 +31,15 @@ export default function About() {
 						</h5>
 						{/* experience */}
 						{/* Download CV Button */}
-						<a
+						{/* <a
 							data-aos="slide-up"
 							href="https://www.canva.com/design/DAF-aqU_lvU/cBD22hjo9kW2vsPDX84B7g/edit?utm_content=DAF-aqU_lvU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
 							target="_blank"
 							className="mt-5 rounded-full bg-cyan-400 px-5 py-3 font-bold text-white">
 							Download CV
-						</a>
+						</a> */}
 					</div>
 					<div className="relative rounded-xl bg-cyan-200">
-						<img
-							data-aos="fade"
-							src="https://johnalexportfolio.netlify.app/assets/about.34cb49a4.png"
-							alt=""
-							className="h-full w-full max-w-sm md:w-60"
-						/>
 						<div className="absolute inset-0 z-[-1] rotate-12 rounded-xl bg-gray-200"></div>
 					</div>
 				</div>

@@ -1,13 +1,20 @@
+import avt from "../../assets/avt.jpg";
+
 export default function Hero() {
 	return (
-		<section id="home" className="flex min-h-screen flex-col items-center pb-6 md:flex-row md:pb-0">
+		<section
+			id="home"
+			className="mx-auto flex min-h-screen flex-col items-center px-4 py-4 pb-6 lg:container md:flex-row md:pb-0 lg:px-16 lg:py-14">
 			<div className="flex flex-1 items-center justify-center p-4 md:p-0">
-				<img
-					src="https://johnalexportfolio.netlify.app/assets/hero.a707d92d.png"
-					alt=""
+				<div
 					data-aos="fade-zoom-out"
-					className="md:w-8/12 lg:w-3/5"
-				/>
+					className="rounded-full bg-gradient-to-b from-purple-500 to-pink-500 p-2">
+					<img
+						src={avt}
+						alt="avatar"
+						className="h-[150px] w-[150px] rounded-full md:h-[200px] md:w-[200px] lg:h-[250px] lg:w-[250px]"
+					/>
+				</div>
 			</div>
 			<div className="flex flex-1 flex-col">
 				<div className="text-center md:text-start">
